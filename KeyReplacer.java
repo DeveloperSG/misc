@@ -64,27 +64,6 @@ public class KeyReplacer {
             }
         }
         return sb.toString();
-        /*StringBuilder sb = new StringBuilder();
-        InputStream is = null;
-        Reader reader = null;
-        try {
-            is = new FileInputStream("json.json");
-            reader = new InputStreamReader(is);
-            int c = 0;
-            while ((c = reader.read()) != -1) {
-                sb.append((char)c);
-            }
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-        } finally {
-            if (is != null) {
-                is.close();
-            }
-            if (reader != null) {
-                reader.close();
-            }
-        }
-        return sb.toString();*/
     }
 
     private static void writeFile(String string) throws IOException {
